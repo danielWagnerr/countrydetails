@@ -15,11 +15,11 @@ class all_countries:
     def __init__(self):
         """constructor method"""
         dir_path = dirname(realpath(__file__))
-        countries_file_path = dir_path + '/Data/countries.json'
-        continents_file_path = dir_path + '/Data/continents.json'
-        region_file_path = dir_path + '/Data/region.json'
-        states_file_path = dir_path + '/Data/states.json'
-        languages_to_capitals_file_path = dir_path + '/Data/langtocountries.json'
+        countries_file_path = dir_path + '/data/countries.json'
+        continents_file_path = dir_path + '/data/continents.json'
+        region_file_path = dir_path + '/data/region.json'
+        states_file_path = dir_path + '/data/states.json'
+        languages_to_capitals_file_path = dir_path + '/data/langtocountries.json'
         with open(countries_file_path, encoding='utf-8') as file:
             countries_file = json.load(file)
             self.countries_file = countries_file
